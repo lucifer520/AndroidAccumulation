@@ -1,0 +1,82 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <Button
+        android:id="@+id/alpha_animation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="alpha" />
+
+    <Button
+        android:id="@+id/alpha_animation_x"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/alpha_animation"
+        android:text="alpha_x" />
+
+    <Button
+        android:id="@+id/scale"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/alpha_animation_x"
+        android:layout_toRightOf="@+id/alpha_animation_x"
+        android:text="scale" />
+
+    <Button
+        android:id="@+id/scale_x"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/alpha_animation_x"
+        android:layout_alignBottom="@+id/alpha_animation_x"
+        android:layout_alignLeft="@+id/scale"
+        android:text="scale_x" />
+
+    <Button
+        android:id="@+id/translate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/scale_x"
+        android:text="Translate" />
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="45dp"
+        android:layout_toRightOf="@+id/alpha_animation"
+        android:background="@drawable/ic_launcher" />
+
+    <Button
+        android:id="@+id/translate_x"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/translate"
+        android:layout_below="@+id/translate"
+        android:text="translate_x" />
+
+    <Button
+        android:id="@+id/rotate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/alpha_animation_x"
+        android:layout_marginTop="21dp"
+        android:layout_toLeftOf="@+id/scale_x"
+        android:text="Rotate" />
+
+    <Button
+        android:id="@+id/rotate_x"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/button1"
+        android:layout_alignBottom="@+id/rotate"
+        android:layout_centerHorizontal="true"
+        android:text="Rotate_x" />
+   
+</RelativeLayout>
